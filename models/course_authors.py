@@ -2,7 +2,10 @@ from django.contrib.auth.models import User
 from django.db import models
 from openedx.core.djangoapps.content.course_overviews.models import CourseOverview
 from django.contrib.auth.models import User
-class course_authors(models.Model):
+class CourseAuthors(models.Model):
+    """
+    Link One - one to CourseOverview
+    """
     # user = models.OneToOneField(User, on_delete=models.CASCADE)
     # department = models.CharField(max_length=100)
     # user_id =  models.IntegerField()
@@ -12,4 +15,4 @@ class course_authors(models.Model):
     created_on =models.DateField()
     id=models.IntegerField()
     class Meta:
-        db_table = "course_authors"
+        db_table = "courseware_authors"
