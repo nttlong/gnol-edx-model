@@ -16,3 +16,6 @@ def CoursewareOrgs():
 def CoursewareUserOrgs():
     from . courseware_user_orgs import CoursewareUserOrgs as ret
     return ret
+def Libraries():
+    from . libraries import Library as ret
+    return ret
