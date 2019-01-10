@@ -3,6 +3,7 @@ from openedx.core.djangoapps.content.course_overviews.models import CourseOvervi
 from django.contrib.auth.models import User
 class CourseSubjects(models.Model):
     # course = models.ForeignKey(CourseOverview)
+    id = models.AutoField(primary_key=True)
     SubjectCode = models.TextField(max_length=50, primary_key=True)
     SubjectName = models.TextField(300)
     SubjectFName = models.TextField(300)
