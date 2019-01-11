@@ -6,7 +6,8 @@ class Library(models.Model):
     """
     Link One - one to CourseOverview
     """
-    id  = models.TextField(primary_key=True)
+    id  = models.AutoField(primary_key=True)
+    key = models.TextField(max_length=450)
     user = models.ForeignKey(User)
     name = models.TextField(max_length=500)
     description = models.TextField(max_length=2000)
