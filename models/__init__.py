@@ -30,3 +30,6 @@ def Vertical():
     from xdj_models.models.courseware_vertical import CoursewareVertical as ret
     return ret
 
+def XBlock():
+    from xdj_models.models.courseware_xblock import CoursewareXblock as ret
+    return ret
